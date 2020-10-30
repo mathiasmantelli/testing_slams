@@ -1,0 +1,6 @@
+<launch>
+  <param name="use_gui" value="true"/>
+  <!--<arg name="config" default="navigation" />-->
+  <arg name="config" default="navigation" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jackal_viz)/rviz/$(arg config).rviz" />
+</launch>
